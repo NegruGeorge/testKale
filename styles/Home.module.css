@@ -1,0 +1,249 @@
+.container {
+  padding: 0 2rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0d76fc;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 3rem 0;
+  line-height: 1;
+  font-size: 2.5rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 0 0 2rem;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+  margin: 1rem;
+  padding: 1.5rem;
+  text-align: left;
+  color: inherit;
+  text-decoration: none;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+  max-width: 350px;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #0d76fc;
+  border-color: #0d76fc;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+
+.page_flexBox {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #cfd9f0;
+  max-width: 814px;
+  margin: auto;
+  padding: 20px;
+  margin-top: 3rem;
+  border-radius: 12px;
+}
+
+.page_container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.page_header {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.nft_media_container {
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+.nft_media {
+  position: relative;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  z-index: 1;
+  width: 350px;
+}
+
+.nft_info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  width: 50%;
+  margin: auto;
+}
+
+.nft_title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 0.3rem;
+}
+
+.nft_author {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.nft_instructions_title {
+  color: #949698;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.text {
+  font-size: 18px;
+}
+
+.break {
+  margin-block: 1em;
+}
+
+.button {
+  border-radius: 8px;
+  background-color: black;
+  padding: 8px 10px;
+  font-weight: 700;
+  margin-top: 1em;
+  border: none;
+  color: white;
+  width: 150px;
+}
+
+.transaction_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 5px;
+}
+.tx_hash {
+  color: rgb(0, 98, 255);
+}
+
+.isMinting {
+  background-color: lightgray;
+  cursor: not-allowed;
+}
+
+.attribute_input_label {
+  font-weight: 700;
+  font-size: 14px;
+  color: #4e4e4e;
+  margin-block: 0.5em;
+}
+
+.address_container {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+@media screen and (max-width: 560px) {
+  .page_container {
+    display: block;
+  }
+
+  .page_flexBox {
+    display: block;
+    width: 500px;
+  }
+
+  .nft_info {
+    width: 90%;
+    font-size: 24px;
+  }
+
+  .nft_media_container {
+    width: 90%;
+    margin-bottom: 2em;
+  }
+
+  .text {
+    font-size: 24px;
+  }
+
+  .nft_author {
+    font-size: 20px;
+  }
+
+  .nft_instructions_title {
+    font-size: 20px;
+  }
+}
